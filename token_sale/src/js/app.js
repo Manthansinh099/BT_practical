@@ -26,18 +26,18 @@ App = {
     },
   
     initContracts: function() {
-      $.getJSON("manthanTokenSale.json", function(manthanTokenSale) {
+      $.getJSON("manthanTokenSale.sol", function(manthanTokenSale) {
         App.contracts.manthanTokenSale = TruffleContract(manthanTokenSale);
         App.contracts.manthanTokenSale.setProvider(App.web3Provider);
         App.contracts.manthanTokenSale.deployed().then(function(manthanTokenSale) {
-          console.log("Dapp Token Sale Address:", manthanTokenSale.address);
+          console.log("manthan Token Sale Address:", manthanTokenSale.address);
         });
       }).done(function() {
-        $.getJSON("manthanToken.json", function(manthanToken) {
+        $.getJSON("manthanToken.sol", function(manthanToken) {
           App.contracts.manthanToken = TruffleContract(manthanToken);
           App.contracts.manthanToken.setProvider(App.web3Provider);
           App.contracts.manthanToken.deployed().then(function(manthanToken) {
-            console.log("Dapp Token Address:", manthanToken.address);
+            console.log("manthan Token Address:", manthanToken.address);
           });
   
           App.listenForEvents();
