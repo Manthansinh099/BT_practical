@@ -1,6 +1,6 @@
 pragma solidity >=0.4.22 <0.9.0;
 
-import "./manthanToken.sol" ;
+import "./manthanToken.sol";
 
 contract manthanTokenSale {
 
@@ -51,7 +51,7 @@ contract manthanTokenSale {
         //Destroy contract
         // UPDATE: Let's not destroy the contract here
         // Just transfer the balance to the admin
-        admin.transfer(address(this).balance);
+        // admin.transfer(address(this).balance);
         selfdestruct(payable(admin));
     }
 }
