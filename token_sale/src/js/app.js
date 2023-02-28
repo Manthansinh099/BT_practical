@@ -69,7 +69,7 @@ App = {
       var content = $('#content');
   
       loader.show();
-      content.hide();
+      content.show();
   
       // Load account data
       web3.eth.getCoinbase(function(err, account) {
@@ -109,7 +109,7 @@ App = {
     },
   
     buyTokens: function() {
-      $('#content').hide();
+      $('#content').show();
       $('#loader').show();
       var numberOfTokens = $('#numberOfTokens').val();
       App.contracts.manthanTokenSale.deployed().then(function(instance) {
