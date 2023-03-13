@@ -68,7 +68,7 @@ App = {
       var loader  = $('#loader');
       var content = $('#content');
   
-      loader.show();
+      loader.hide();
       content.show();
   
       // Load account data
@@ -100,7 +100,7 @@ App = {
           manthanTokenInstance = instance;
           return manthanTokenInstance.balanceOf(App.account);
         }).then(function(balance) {
-          $('.dapp-balance').html(balance.toNumber());
+          $('.manthantokan-balance').html(balance.toNumber());
           App.loading = false;
           loader.hide();
           content.show();
@@ -110,7 +110,7 @@ App = {
   
     buyTokens: function() {
       $('#content').show();
-      $('#loader').show();
+      $('#loader').hide();
       var numberOfTokens = $('#numberOfTokens').val();
       App.contracts.manthanTokenSale.deployed().then(function(instance) {
         return instance.buyTokens(numberOfTokens, {
