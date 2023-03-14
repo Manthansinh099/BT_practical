@@ -6057,12 +6057,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xF7c24A74aaffC979C1cDC61B9a28a16A06202AD2",
-      "transactionHash": "0xb7039ac1d72de49def56436cfa10c0daf2ddd20700cc10f07499c5ca9b7dde86"
+      "address": "0x2a2779Cd78A3dAA268aba3775fB1C60D751C746b",
+      "transactionHash": "0x2bb98bab660c510a4c99893c805eea60895c49a5cd76852b41b794cc9a6b6e10"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-03-13T17:10:14.509Z",
+  "updatedAt": "2023-03-14T06:56:37.200Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
